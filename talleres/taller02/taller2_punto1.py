@@ -1,3 +1,4 @@
+#Code obtained from VisuAlgo , visualgo.net/en/recursion
 def euclid (p,q):
   if q == 0:
     return p
