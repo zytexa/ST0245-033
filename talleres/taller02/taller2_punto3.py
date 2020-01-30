@@ -6,4 +6,4 @@ def sub(l):
 
   return x + [[l[0]] + y for y in x]
 
-print(sub([5,8,9,8,2,6]))
+print(sub(["a","b","c"]))
