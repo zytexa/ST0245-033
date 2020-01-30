@@ -4,7 +4,7 @@ def euclid (p,q):
   else:
     return euclid(q,p%q)
 
-p = int(input("Please input the value of p (Largest Value): "))
-q = int(input("Please input the value of q (Smallest Value): "))
+p = int(input("Please input the value of p: "))
+q = int(input("Please input the value of q: "))
 
-print("The greatest common denominator of",p,"and",q, "is:",euclid(p,q))
+print("The greatest common denominator of",p,"and",q, "is:",euclid(p,q),end=".")
