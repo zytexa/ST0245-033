@@ -16,7 +16,7 @@ def group_sum(set, n, sum):
   #Else, check if the target sum can be obtained by including the last element or excluding the last element
   return group_sum(set, n-1, sum) or group_sum(set, n-1, sum - set[n-1])
   
-set = [1, 4, 8] 
+set = [2, 4, 8] 
 sum = 10
 n = len(set)
 if (group_sum(set, n, sum) == True):
