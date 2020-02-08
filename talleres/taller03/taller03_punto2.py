@@ -1,13 +1,10 @@
-def permutacion(prefix,s):
-    if len(s) == 0:
-      print(prefix)
-    else:
-      i=0
-      for i in range (i,len(s)):
-          f = s[i]
-          u = s[0:i]+s[i+1]
-          permutacion(f,u)
-    return prefix 
-    
-
-permutacion("","abcd")
+def perm(n, i):
+  if i == len(n) - 1:
+    #Base Case, ends when we have reached the outer most element in the list.
+    print(n)
+  else:
+    for j in range(i, len(n)):
+      n[i], n[j] = n[j], n[i]
+      perm(n, i + 1)
+      n[i], n[j] = n[j], n[i]
+perm(list(str(input())), 0)
